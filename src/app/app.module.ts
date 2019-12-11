@@ -14,6 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule, MatPaginatorModule, MatProgressSpinnerModule, MatSortModule,
   MatTableModule, MatIconModule, MatButtonModule, MatCardModule, MatFormFieldModule } from '@angular/material';
 import { Book1Component } from './book1/book1.component';
+import { BooksBetaComponent } from './books-beta/books-beta.component';
 //import {MomentDateModule,  MatMomentDateModule } from '@angular/material-moment-adapter';
 
 
@@ -38,6 +39,11 @@ const appRoutes: Routes = [
     component : BookEditComponent,
     data :{ title : 'Edit Book'}
   },
+    {
+    path : 'bookexample',
+    component : BooksBetaComponent,
+    data :{ title : 'Example Book'}
+  },
   {
     path : '',
     redirectTo: '/books',
@@ -53,7 +59,8 @@ const appRoutes: Routes = [
     BookDetailComponent,
     BookCreateComponent,
     BookEditComponent,
-    Book1Component
+    Book1Component,
+    BooksBetaComponent
   ],
   imports: [
     BrowserModule,
